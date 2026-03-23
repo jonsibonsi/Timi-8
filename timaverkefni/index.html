@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Player leikur</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js">
+              function checkCharacter() {
+        // 1. Ná í name, age og score
+        // 2. Breyta age og score í Number
+        // 3. Ef eitthvað vantar → sýna villu
+        // 4. Nota if / else:
+        // ef age < 18 skila þá "Of ung/ur til að spila"
+        // ef score > 80 og age >= 18 "Pro"
+        // ef score > 50 en < 80 "Normal"
+        // annars skila "Beginner"
+        // 5. Sýna niðurstöðu í output
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Hvaða Player ert þú?</h1>
+
+    <input id="name" type="text" placeholder="Nafn" />
+    <input id="age" type="number" placeholder="Aldur" />
+    <input id="score" type="number" placeholder="Stig (0-100)" />
+
+    <button onclick="checkCharacter()">Niðurstöður</button>
+
+    <div id="output" class="box">Hér kemur niðurstaða...</div>
+  </body>
+</html>
